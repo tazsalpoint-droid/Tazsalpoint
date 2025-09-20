@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tazsalpoint Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Tazsalpoint Store</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#mlbb">Joki MLBB</a>
+      <a href="#montage">Joki Montage</a>
+      <a href="#kontak">Kontak Admin</a>
+    </nav>
+  </header>
+
+  <!-- Home -->
+  <section id="home" class="section">
+    <h2>Selamat Datang di Tazsalpoint 💖</h2>
+    <p>Layanan Joki Mobile Legends & Montage terpercaya dengan harga terjangkau.</p>
+  </section>
+
+  <!-- Joki Mobile Legends -->
+  <section id="mlbb" class="section">
+    <h2>Harga Joki Mobile Legends</h2>
+    <ul class="price-list">
+      <li>Epic ⭐ → 4.000</li>
+      <li>Legends ⭐ → 5.000</li>
+      <li>Mythic ⭐ → 8.000</li>
+      <li>Honor ⭐ → 11.000</li>
+      <li>Glory ⭐ → 15.000</li>
+      <li>Immortal ⭐ → 20.000</li>
+    </ul>
+
+    <div class="form-card">
+      <h3>Order Joki MLBB</h3>
+      <form id="orderMLForm">
+        <label>Pilih Login:</label>
+        <div class="login-options">
+          <button type="button" data-login="moonton">Moonton</button>
+          <button type="button" data-login="google">Google</button>
+          <button type="button" data-login="fb">Facebook</button>
+          <button type="button" data-login="email">Email</button>
+        </div>
+        <input type="hidden" id="loginType" name="loginType">
+
+        <label>Email / ID:</label>
+        <input type="text" placeholder="Masukkan Email/ID" required>
+
+        <label>Password:</label>
+        <input type="password" placeholder="Masukkan Password" required>
+
+        <label>Pilih Rank:</label>
+        <select id="rankSelect" required>
+          <option value="epic">Epic (4.000)</option>
+          <option value="legends">Legends (5.000)</option>
+          <option value="mythic">Mythic (8.000)</option>
+          <option value="honor">Honor (11.000)</option>
+          <option value="glory">Glory (15.000)</option>
+          <option value="immortal">Immortal (20.000)</option>
+        </select>
+
+        <label>Jumlah Bintang:</label>
+        <input type="range" id="starRange" min="1" max="100" value="1" oninput="updateStarValue(this.value)">
+        <p>⭐ <span id="starValue">1</span> Bintang</p>
+
+        <p><b>Total Harga:</b> Rp <span id="mlTotal">4000</span></p>
+        <p><b>Pembayaran:</b> Dana → 085709518077</p>
+
+        <button type="submit">Kirim Order MLBB</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Joki Montage -->
+  <section id="montage" class="section">
+    <h2>Harga Joki Montage</h2>
+    <div class="price-grid">
+      <div class="price-card">
+        <h3>Hero Assassin</h3>
+        <p>Replay 40dtk → 20K<br>Ingame 40dtk → 15K</p>
+      </div>
+      <div class="price-card">
+        <h3>Hero Fighter</h3>
+        <p>Replay 40dtk → 15K<br>Ingame 40dtk → 10K</p>
+      </div>
+      <div class="price-card">
+        <h3>Hero Tank/Support</h3>
+        <p>Replay 40dtk → 15K<br>Ingame 40dtk → 10K</p>
+      </div>
+      <div class="price-card">
+        <h3>Hero Mage</h3>
+        <p>Replay 40dtk → 15K<br>Ingame 40dtk → 10K</p>
+      </div>
+      <div class="price-card">
+        <h3>Hero Marksman</h3>
+        <p>Replay 40dtk → 20K<br>Ingame 40dtk → 15K</p>
+      </div>
+    </div>
+
+    <div class="form-card">
+      <h3>Order Joki Montage</h3>
+      <form id="orderMontageForm">
+        <label>Pilih Role:</label>
+        <div class="role-options">
+          <button type="button" data-role="assassin">Assassin</button>
+          <button type="button" data-role="fighter">Fighter</button>
+          <button type="button" data-role="tank">Tank/Support</button>
+          <button type="button" data-role="mage">Mage</button>
+          <button type="button" data-role="marksman">Marksman</button>
+        </div>
+        <input type="hidden" id="roleType" name="roleType">
+
+        <label>Pilih Durasi:</label>
+        <div class="durasi-options">
+          <button type="button" data-durasi="replay">Replay 40dtk</button>
+          <button type="button" data-durasi="ingame">Ingame 40dtk</button>
+        </div>
+        <input type="hidden" id="durasiType" name="durasiType">
+
+        <p><b>Total Harga:</b> Rp <span id="montageTotal">0</span></p>
+        <p><b>Pembayaran:</b> Dana → 085709518077</p>
+
+        <button type="submit">Kirim Order Montage</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Kontak Admin -->
+  <section id="kontak" class="section">
+    <h2>Kontak Admin</h2>
+    <p>📱 Admin 1: <a href="https://wa.me/6285709518077">0857-0951-8077</a></p>
+    <p>📱 Admin 2: <a href="https://wa.me/6282170904440">0821-7090-4440</a></p>
+    <p><b>Note:</b> Chat dulu admin sebelum transaksi!</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Tazsalpoint Store</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

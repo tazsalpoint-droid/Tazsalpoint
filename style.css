@@ -1,0 +1,22 @@
+body { font-family: Arial, sans-serif; margin:0; background:#ffe6f2; color:#333; }
+header { background:#ff4da6; color:white; text-align:center; padding:15px; }
+header h1 { margin:0; }
+nav { margin-top:10px; }
+nav a { color:white; margin:0 10px; text-decoration:none; font-weight:bold; }
+.section { padding:20px; text-align:center; }
+.price-list { list-style:none; padding:0; }
+.price-list li { background:white; margin:5px auto; padding:10px; max-width:300px; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.1); }
+.price-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(180px,1fr)); gap:15px; }
+.price-card { background:white; padding:15px; border-radius:12px; box-shadow:0 2px 5px rgba(0,0,0,0.15); }
+.form-card { background:white; margin:20px auto; padding:20px; max-width:400px; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.15); text-align:left; }
+.form-card h3 { text-align:center; margin-bottom:15px; }
+form label { display:block; margin:8px 0 5px; font-weight:bold; }
+form input, form select { width:100%; padding:8px; border-radius:8px; border:1px solid #ccc; margin-bottom:12px; }
+button { width:100%; padding:10px; background:#ff4da6; border:none; border-radius:8px; color:white; font-weight:bold; cursor:pointer; }
+button:hover { background:#e60073; }
+.login-options, .role-options, .durasi-options { display:flex; flex-wrap:wrap; gap:10px; margin-bottom:12px; }
+.login-options button, .role-options button, .durasi-options button { flex:1; padding:10px; border:2px solid #ff4da6; background:white; color:#ff4da6; border-radius:8px; font-weight:bold; cursor:pointer; transition:0.3s; }
+.login-options button:hover, .role-options button:hover, .durasi-options button:hover { background:#ff4da6; color:white; }
+.login-options button.active, .role-options button.active, .durasi-options button.active { background:#ff4da6; color:white; }
+input[type=range] { width:100%; accent-color:#ff4da6; }
+footer { text-align:center; background:#ff4da6; color:white; padding:10px; margin-top:20px; }
