@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tazsalpoint Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Tazsalpoint Store</h1>
+    <nav>
+      <ul>
+        <li><a href="#joki-ml">Joki Mobile Legends</a></li>
+        <li><a href="#joki-montage">Joki Montage</a></li>
+        <li><a href="#login">Login</a></li>
+        <li><a href="#pembayaran">Pembayaran</a></li>
+        <li><a href="#admin">Kontak Admin</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="joki-ml">
+      <h2>Joki Mobile Legends</h2>
+      <label for="rank">Pilih Rank:</label>
+      <select id="rank">
+        <option value="4000">Epic ⭐ - 4.000</option>
+        <option value="5000">Legends ⭐ - 5.000</option>
+        <option value="8000">Mythic ⭐ - 8.000</option>
+        <option value="11000">Honor ⭐ - 11.000</option>
+        <option value="15000">Glory ⭐ - 15.000</option>
+        <option value="20000">Immortal ⭐ - 20.000</option>
+      </select>
+      <button onclick="pesanJoki()">Pesan Joki</button>
+    </section>
+
+    <section id="joki-montage">
+      <h2>List Joki Montage</h2>
+      <label for="montage">Pilih Hero:</label>
+      <select id="montage">
+        <option value="20000">Assassin - Replay 20k / Ingame 15k</option>
+        <option value="15000">Fighter - Replay 15k / Ingame 10k</option>
+        <option value="15000">Tank/Support - Replay 15k / Ingame 10k</option>
+        <option value="15000">Mage - Replay 15k / Ingame 10k</option>
+        <option value="20000">Marksman - Replay 20k / Ingame 15k</option>
+      </select>
+      <button onclick="pesanMontage()">Pesan Montage</button>
+    </section>
+
+    <section id="login">
+      <h2>Login Mobile Legends</h2>
+      <p>Pilih metode login:</p>
+      <ul>
+        <li>Moonton</li>
+        <li>Google</li>
+        <li>Facebook</li>
+      </ul>
+      <form>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <button type="submit">Login</button>
+      </form>
+      <p>Login akan dikirim ke nomor: <b>085709518077</b></p>
+    </section>
+
+    <section id="pembayaran">
+      <h2>Pembayaran</h2>
+      <p>Pembayaran via DANA ke nomor <b>085709518077</b></p>
+    </section>
+
+    <section id="admin">
+      <h2>Kontak Admin</h2>
+      <p>Admin MLBB 1: <a href="https://wa.me/6285709518077">085709518077</a></p>
+      <p>Admin MLBB 2: <a href="https://wa.me/6282170904440">082170904440</a></p>
+      <p>Note: Chat dulu nomor ini sebelum melakukan transaksi.</p>
+      <p>Pengaturan Website: <a href="https://wa.me/6285709518077">Hubungi Admin</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Tazsalpoint Store. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
