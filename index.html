@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tazsalpoint Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Tazsalpoint Store</h1>
+    <nav>
+      <ul>
+        <li><a href="#mlbb">Joki Mobile Legends</a></li>
+        <li><a href="#montage">Joki Montage</a></li>
+        <li><a href="#login">Login MLBB</a></li>
+        <li><a href="#pembayaran">Pembayaran</a></li>
+        <li><a href="#kontak">Kontak Admin</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Joki Mobile Legends -->
+  <section id="mlbb">
+    <h2>Joki Mobile Legends</h2>
+    <table>
+      <tr><th>Rank</th><th>Harga</th></tr>
+      <tr><td>Epic ⭐</td><td>Rp 4.000</td></tr>
+      <tr><td>Legends ⭐</td><td>Rp 5.000</td></tr>
+      <tr><td>Mythic ⭐</td><td>Rp 8.000</td></tr>
+      <tr><td>Honor ⭐</td><td>Rp 11.000</td></tr>
+      <tr><td>Glory ⭐</td><td>Rp 15.000</td></tr>
+      <tr><td>Immortal ⭐</td><td>Rp 20.000</td></tr>
+    </table>
+
+    <label for="stars">Pilih jumlah bintang:</label>
+    <input type="number" id="stars" min="1" max="100" value="1">
+  </section>
+
+  <!-- Joki Montage -->
+  <section id="montage">
+    <h2>List Joki Montage</h2>
+    <div class="montage-list">
+      <h3>Hero Assassin</h3>
+      <p>40 detik Replay - 20k<br>40 detik Ingame - 15k</p>
+
+      <h3>Hero Fighter</h3>
+      <p>40 detik Replay - 15k<br>40 detik Ingame - 10k</p>
+
+      <h3>Hero Tank/Support</h3>
+      <p>40 detik Replay - 15k<br>40 detik Ingame - 10k</p>
+
+      <h3>Hero Mage</h3>
+      <p>40 detik Replay - 15k<br>40 detik Ingame - 10k</p>
+
+      <h3>Hero Marksman</h3>
+      <p>40 detik Replay - 20k<br>40 detik Ingame - 15k</p>
+    </div>
+
+    <label for="montageSelect">Pilih jenis montage:</label>
+    <select id="montageSelect">
+      <option value="assassin">Hero Assassin</option>
+      <option value="fighter">Hero Fighter</option>
+      <option value="tank">Hero Tank/Support</option>
+      <option value="mage">Hero Mage</option>
+      <option value="marksman">Hero Marksman</option>
+    </select>
+  </section>
+
+  <!-- Login -->
+  <section id="login">
+    <h2>Login Mobile Legends</h2>
+    <button onclick="login('Moonton')">Login via Moonton</button>
+    <button onclick="login('Google')">Login via Google</button>
+    <button onclick="login('Facebook')">Login via Facebook</button>
+
+    <h3>Login dengan Email & Password</h3>
+    <form id="loginForm">
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <button type="submit">Kirim</button>
+    </form>
+  </section>
+
+  <!-- Pembayaran -->
+  <section id="pembayaran">
+    <h2>Pembayaran</h2>
+    <p>Metode pembayaran hanya melalui <b>DANA</b></p>
+    <p>Nomor DANA: <b>085709518077</b></p>
+  </section>
+
+  <!-- Kontak -->
+  <section id="kontak">
+    <h2>Kontak Admin</h2>
+    <p>Admin MLBB 1: <a href="https://wa.me/6285709518077">085709518077</a></p>
+    <p>Admin 2: <a href="https://wa.me/6282170904440">082170904440</a></p>
+    <p><b>Note:</b> Harap chat dulu sebelum transaksi.</p>
+    <h3>Menu Pengaturan Website</h3>
+    <p><a href="https://wa.me/6285709518077">Hubungi Pengaturan Website</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Tazsalpoint Store</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
